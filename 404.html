@@ -2,6 +2,37 @@
 <html>
 
 <head>
+  <title>Saroj Blog | Not Found </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="/scripts/scripts.js" type="module" crossorigin="use-credentials"></script>
+  <script type="module">
+    import { sampleRUM } from '/scripts/lib-franklin.js';
+
+    window.addEventListener('load', () => {
+      sampleRUM('404', { source: document.referrer, target: window.location.href });
+    });
+  </script>
+  <link rel="stylesheet" href="/styles/styles.css">
+  <link rel="icon" href="data:,">
+</head>
+
+<body>
+  <header></header>
+  <main>
+    <div style="text-align: center; margin-bottom: 128px;">
+      <h1>404 Error</h1>
+      <p>Whoops! It looks like this page got lost.</p>
+      <img src="/styles/pudgy-woodsman-background.svg" alt = "oops">
+    </div>
+  </main>
+  <footer></footer>
+</body>
+
+</html>
+<!--/* <!DOCTYPE html>
+<html>
+
+<head>
   <title>Page not found</title>
   <script type="text/javascript">
     window.isErrorPage = true;
@@ -65,3 +96,4 @@
 </body>
 
 </html>
+ */-->
